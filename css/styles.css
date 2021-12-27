@@ -57,7 +57,7 @@ svg {
 }
 
 .site-nav .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -72,6 +72,11 @@ svg {
 .main-nav {
   display: flex;
   align-items: center;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
 /*auth-nav*/
@@ -436,6 +441,7 @@ svg {
 }
 
 .address {
+  display: flex;
   color: var(--address--);
   text-decoration: none;
 }
@@ -467,7 +473,7 @@ svg {
 }
 
 .cliens {
-  display: block;
+  display: flex;
   padding: 16px 32px;
   width: 170px;
   height: 92px;
@@ -481,13 +487,8 @@ svg {
   margin-left: 30px;
 }
 
-.cliens:hover,
-.cliens:focus {
-  fill: var(--accent-color);
-}
-
-.cliens:hover,
-.cliens:focus {
+.section-cliens .cliens:hover,
+.section-cliens .cliens:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -499,7 +500,7 @@ svg {
 }
 
 .contact-icon {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   margin-top: 16px;
@@ -521,8 +522,8 @@ svg {
   background-color: var(--accent-color);
 }*/
 
-.contact-icon:hover,
-.contact-icon:focus {
+.icon .contact-icon:hover,
+.icon .contact-icon:focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
 }
