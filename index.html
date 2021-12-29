@@ -321,12 +321,6 @@
             </ul>
         </div>
             </section>
-
-          <!--Модальне вікно-->
-    <div class="backdrop"></div>
-        <div class="modal" data-modal></div>
-        <button data-modal-close>Закрыть</button>
-
 </main>
 <footer class="footer">
     <div class="container addres">
@@ -376,21 +370,14 @@
 </div>
 </footer>
 
+<!--Модальне вікно-->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+       <button data-modal-close>Закрыть</button>
+    </div>
+</div>
+
+
 <script src="./js/modal.js"></script>
-(() => {
-const refs = {
-openModalBtn: document.querySelector('[data-modal-open]'),
-closeModalBtn: document.querySelector('[data-modal-close]'),
-modal: document.querySelector('[data-modal]'),
-};
-
-refs.openModalBtn.addEventListener('click', toggleModal);
-refs.closeModalBtn.addEventListener('click', toggleModal);
-
-function toggleModal() {
-refs.modal.classList.toggle('is-hidden');
-}
-})();
-
 </body>
 </html>
